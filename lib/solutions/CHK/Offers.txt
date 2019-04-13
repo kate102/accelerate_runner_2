@@ -1,0 +1,18 @@
+discounts
+# | A    | 50    | 3A for 130, 5A for 200 |
+# | B    | 30    | 2B for 45              |
+
+# | H    | 10    | 5H for 45, 10H for 80  |
+# | K    | 80    | 2K for 150             |
+
+# | P    | 50    | 5P for 200             |
+# | Q    | 30    | 3Q for 80              |
+
+# | V    | 50    | 2V for 90, 3V for 130  |
+
+freebies
+# | E    | 40    | 2E get one B free      |
+# | F    | 10    | 2F get one F free      |
+# | N    | 40    | 3N get one M free      |
+# | R    | 50    | 3R get one Q free      |
+# | U    | 40    | 3U get one U free      |

@@ -1,0 +1,59 @@
+spec/CHK/checkout_spec.rb:3:1: C: Metrics/BlockLength: Block has too many lines. [210/25]
+spec/CHK/checkout_spec.rb:93:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:96:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:99:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:102:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:105:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:108:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:111:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:114:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:117:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:120:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:123:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:126:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:129:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:132:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:135:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:138:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:143:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:146:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:149:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:152:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:155:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:158:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:161:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:164:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:168:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:171:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:174:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:177:2: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+spec/CHK/checkout_spec.rb:181:1: C: Layout/CommentIndentation: Incorrect indentation detected (column 0 instead of 2).
+lib/solutions/CHK/checkout.rb:10:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:23:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:32:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:42:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:51:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:63:1: C: Metrics/ClassLength: Class has too many lines. [251/100]
+lib/solutions/CHK/checkout.rb:63:1: C: Style/Documentation: Missing top-level class documentation comment.
+lib/solutions/CHK/checkout.rb:82:3: C: Metrics/AbcSize: Assignment Branch Condition size for set_up_prices is too high. [58.59/15]
+lib/solutions/CHK/checkout.rb:82:3: C: Metrics/MethodLength: Method has too many lines. [53/10]
+lib/solutions/CHK/checkout.rb:138:3: C: Metrics/AbcSize: Assignment Branch Condition size for set_up_discounts is too high. [22.83/15]
+lib/solutions/CHK/checkout.rb:138:3: C: Metrics/MethodLength: Method has too many lines. [21/10]
+lib/solutions/CHK/checkout.rb:162:3: C: Metrics/MethodLength: Method has too many lines. [11/10]
+lib/solutions/CHK/checkout.rb:178:18: C: Style/WordArray: Use %w or %W for an array of words.
+lib/solutions/CHK/checkout.rb:196:7: C: Style/IfUnlessModifier: Favor modifier if usage when having a single-line body. Another good alternative is the usage of control flow &&/||.
+lib/solutions/CHK/checkout.rb:208:81: C: Metrics/LineLength: Line is too long. [81/80]
+lib/solutions/CHK/checkout.rb:240:7: C: Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+lib/solutions/CHK/checkout.rb:250:45: C: Layout/SpaceBeforeBlockBraces: Space missing to the left of {.
+lib/solutions/CHK/checkout.rb:272:81: C: Metrics/LineLength: Line is too long. [81/80]
+lib/solutions/CHK/checkout.rb:284:3: C: Metrics/AbcSize: Assignment Branch Condition size for check_discounts is too high. [18.47/15]
+lib/solutions/CHK/checkout.rb:284:3: C: Metrics/MethodLength: Method has too many lines. [14/10]
+lib/solutions/CHK/checkout.rb:288:9: C: Style/Next: Use next to skip iteration.
+lib/solutions/CHK/checkout.rb:292:81: C: Metrics/LineLength: Line is too long. [90/80]
+lib/solutions/CHK/checkout.rb:304:9: C: Style/Next: Use next to skip iteration.
+lib/solutions/CHK/checkout.rb:317:3: C: Metrics/MethodLength: Method has too many lines. [11/10]
+lib/solutions/CHK/checkout.rb:319:7: C: Style/Next: Use next to skip iteration.
+    .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})
+    .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})
+    .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})
+    .with_solution_for('checkout', -> (p) {Checkout.new.checkout(p)})

@@ -1,52 +1,7 @@
 # noinspection RubyUnusedLocalVariable
-class Item
-  attr_reader :name, :price
-  def initialize(name, price)
-    @name = name
-    @price = price
-  end
-end
-
-class BasketItem < Item
-  attr_reader :qty
-  def initialize(name, price, qty)
-    @name = name
-    @price = price
-    @qty = qty
-  end
-
-  def update_quantity(new_qty)
-    @qty = new_qty
-  end
-end
-
-class Discount
-  attr_reader :name, :qty, :price
-  def initialize(name, qty, price)
-    @name = name
-    @qty = qty
-    @price = price
-  end
-end
-
-class Freebie
-  attr_reader :name, :qty, :free_item, :min_qty
-  def initialize(name, qty, free_item, min_qty = qty)
-    @name = name
-    @qty = qty
-    @free_item = free_item
-    @min_qty = min_qty
-  end
-end
-
-class Group
-  attr_reader :item_list, :qty, :price
-  def initialize(item_list, qty, price)
-    @item_list = item_list
-    @qty = qty
-    @price = price
-  end
-end
+require './lib/solutions/CHK/basket_item.rb'
+require './lib/solutions/CHK/special_offer.rb'
+require 'csv'
 
 class Basket
   attr_reader :items, :total
@@ -81,58 +36,11 @@ class Checkout
 
   def set_up_prices
     @shop_items = []
-    i = Item.new('A', 50)
-    @shop_items << i
-    i = Item.new('B', 30)
-    @shop_items << i
-    i = Item.new('C', 20)
-    @shop_items << i
-    i = Item.new('D', 15)
-    @shop_items << i
-    i = Item.new('E', 40)
-    @shop_items << i
-    i = Item.new('F', 10)
-    @shop_items << i
-    i = Item.new('G', 20)
-    @shop_items << i
-    i = Item.new('H', 10)
-    @shop_items << i
-    i = Item.new('I', 35)
-    @shop_items << i
-    i = Item.new('J', 60)
-    @shop_items << i
-    i = Item.new('K', 70)
-    @shop_items << i
-    i = Item.new('L', 90)
-    @shop_items << i
-    i = Item.new('M', 15)
-    @shop_items << i
-    i = Item.new('N', 40)
-    @shop_items << i
-    i = Item.new('O', 10)
-    @shop_items << i
-    i = Item.new('P', 50)
-    @shop_items << i
-    i = Item.new('Q', 30)
-    @shop_items << i
-    i = Item.new('R', 50)
-    @shop_items << i
-    i = Item.new('S', 20)
-    @shop_items << i
-    i = Item.new('T', 20)
-    @shop_items << i
-    i = Item.new('U', 40)
-    @shop_items << i
-    i = Item.new('V', 50)
-    @shop_items << i
-    i = Item.new('W', 20)
-    @shop_items << i
-    i = Item.new('X', 17)
-    @shop_items << i
-    i = Item.new('Y', 20)
-    @shop_items << i
-    i = Item.new('Z', 21)
-    @shop_items << i
+    filename = 'lib/solutions/CHK/prices.csv'
+    CSV.foreach(filename, :headers => false) do |row|
+      i = Item.new(row[0], row[1].to_i)
+        @shop_items << i
+    end
   end
 
   def set_up_discounts

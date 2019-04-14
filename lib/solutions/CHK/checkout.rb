@@ -37,55 +37,37 @@ class Checkout
   def set_up_prices
     @shop_items = []
     filename = 'lib/solutions/CHK/prices.csv'
-    CSV.foreach(filename, :headers => false) do |row|
+    CSV.foreach(filename, :headers => true) do |row|
       i = Item.new(row[0], row[1].to_i)
-        @shop_items << i
+      @shop_items << i
     end
   end
 
   def set_up_discounts
     @discounts = []
-    d = Discount.new('A', 5, 200)
-    @discounts << d
-    d = Discount.new('A', 3, 130)
-    @discounts << d
-    d = Discount.new('B', 2, 45)
-    @discounts << d
-    d = Discount.new('H', 10, 80)
-    @discounts << d
-    d = Discount.new('H', 5, 45)
-    @discounts << d
-    d = Discount.new('K', 2, 120)
-    @discounts << d
-    d = Discount.new('P', 5, 200)
-    @discounts << d
-    d = Discount.new('Q', 3, 80)
-    @discounts << d
-    d = Discount.new('V', 3, 130)
-    @discounts << d
-    d = Discount.new('V', 2, 90)
-    @discounts << d
+    filename = 'lib/solutions/CHK/discounts.csv'
+    CSV.foreach(filename, :headers => true) do |row|
+      i = Discount.new(row[0], row[1].to_i, row[2].to_i)
+      @discounts << i
+    end
   end
 
   def set_up_freebies
     @freebies = []
-    f = Freebie.new('E', 2, 'B')
-    @freebies << f
-    f = Freebie.new('F', 3, 'F', 1)
-    @freebies << f
-    f = Freebie.new('N', 3, 'M', 1)
-    @freebies << f
-    f = Freebie.new('R', 3, 'Q', 1)
-    @freebies << f
-    f = Freebie.new('U', 4, 'U', 1)
-    @freebies << f
+    filename = 'lib/solutions/CHK/freebies.csv'
+    CSV.foreach(filename, :headers => true) do |row|
+      f = Freebie.new(row[0], row[1].to_i, row[2], row[3].to_i)
+      @freebies << f
+    end
   end
 
   def set_up_groups
     @groups = []
-    group_list = ['S', 'T', 'X', 'Y', 'Z']
-    g = Group.new(group_list, 3, 45)
-    @groups << g
+    filename = 'lib/solutions/CHK/groups.csv'
+    CSV.foreach(filename, :headers => true) do |row|
+      g = Group.new(row[0], row[1].to_i, row[2].to_i)
+      @groups << g
+    end
   end
 
   def check_valid(basket)

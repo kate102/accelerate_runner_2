@@ -1,4 +1,4 @@
-require './lib/solutions/SUM/Sum.rb'
+require './lib/solutions/SUM/sum.rb'
 
 describe Sum do
 

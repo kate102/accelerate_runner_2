@@ -1,5 +1,5 @@
 # noinspection RubyUnusedLocalVariable
-require './lib/solutions/CHK/basket_item.rb'
+require './lib/solutions/CHK/item.rb'
 require './lib/solutions/CHK/special_offer.rb'
 require 'csv'
 

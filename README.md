@@ -5,9 +5,9 @@ Accelerate IO (https://accelerate.io/index.html) was a challenge set in week 10 
 
 
 ## Tech 
-The code is writted in `Ruby 2.2.2`
-Command line testing used `rspec`
-Continuous Integration was with `travis`
+- The code is writted in `Ruby 2.2.2`
+- Command line testing used `rspec`
+- Continuous Integration was with `travis`
 ![](images/Screenshot%202019-04-21%20at%2009.01.46.png)
 
 
